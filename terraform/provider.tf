@@ -14,4 +14,5 @@ resource "helm_release" "services" {
   name       = each.key
   chart      = each.value.chart
   version    = each.value.version
+  #force_update = true
 }
